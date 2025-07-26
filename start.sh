@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir server
+python3 -m http.server -d server &
 BOTPATH="${ADDR/@/"%40"}"
 BOTZIPDB="${ADDR/@/"%40"}.zip"
 BOTDB="$HOME/.simplebot/accounts/$BOTPATH/bot.db"
